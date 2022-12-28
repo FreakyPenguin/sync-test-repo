@@ -1,0 +1,14 @@
+build-job:
+  stage: build
+  script:
+    - test -f build_success
+
+test-job1:
+  stage: test
+  script:
+    - test -f test1_success
+
+test-job2:
+  stage: test
+  script:
+    - test -f test2_success
